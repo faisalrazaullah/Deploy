@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxi Booking App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚖 QuickRide</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#booking">Book a Ride</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fast. Reliable. Affordable.</h2>
+    <p>Book your taxi in seconds and ride with comfort.</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </section>
+
+  <section id="booking" class="booking-form">
+    <h2>Book a Ride</h2>
+    <form id="rideForm">
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" required />
+
+      <label for="drop">Drop Location:</label>
+      <input type="text" id="drop" required />
+
+      <label for="time">Pickup Time:</label>
+      <input type="datetime-local" id="time" required />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <p id="confirmation" class="confirmation"></p>
+  </section>
+
+  <footer id="contact">
+    <p>📞 Contact us: +92-300-1234567 | ✉️ support@quickride.pk</p>
+    <p>&copy; 2025 QuickRide. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
